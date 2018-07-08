@@ -37,7 +37,7 @@ import { applyMiddleware, createStore } from 'redux';
 import logger from 'redux-logger'
 const store = createStore(
   reducer,
-  applyMiddleware(logger)
+  applyMiddleware(logger())
 )
 
 // Note passing middleware as the third argument requires redux@>=3.1.0
